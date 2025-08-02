@@ -33,8 +33,8 @@ struct Question {
                 ]
             ),
             Question(
-                title: "Любите ли вы поезди на машине?",
-                type: .randeg,
+                title: "Любите ли вы поездки на машине?",
+                type: .ranged,
                 answers: [
                     Answer(title: "Ненавижу", animal: .cat),
                     Answer(title: "Нервничаю", animal: .rabbit),
@@ -49,7 +49,7 @@ struct Question {
 enum ResponseType {
     case single
     case multiple
-    case randeg
+    case ranged
 }
 struct Answer {
     let title: String
